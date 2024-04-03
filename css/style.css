@@ -19,6 +19,11 @@ h2{
     color: white;
 }
 
+.circle{
+    border-radius: 50%;
+    object-fit: contain;
+}
+
 /* ***SPAZIATURE*** */
 .mrg-bottom{
     margin-bottom: 0.7rem;
@@ -34,29 +39,38 @@ h2{
 .mrg-left{
     margin-left: 1rem;
 }
-
+.mrg-right{
+    margin-right: 1rem;
+}
 
 /***MAIN*** */
 
 .screen.container{
     height: 100vh;
-    
+    width: 100%;
 }
 
 .main-container{
     width: 100%;
-    height: calc(100vh - 5rem);
+    height: calc(100% - 5rem);
     display: flex;
+    background-color: #141922;
 }
 
 .content-container{
     overflow: auto;
+    height: calc(100vh - 5rem);
+    width: calc(100vw - 10rem);
+    background-color: #141922;
 }
 
 .song-container{
     width: 100%;
     height: 5rem;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /****NAVBAR*** */
@@ -76,6 +90,7 @@ h2{
 
 .playlist-col{
     height: calc(100% - 5rem);
+    overflow: auto;
 }
 
 
@@ -137,8 +152,7 @@ hr{
 
 .song-row{
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    gap: 1rem;
 }
 
 .card{
@@ -158,4 +172,55 @@ hr{
     color: white;
 }
 
+/* ***SONG FOOTER SECTION*** */
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.square{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+.square img{
+    width: 100%;
+}
+
+.font-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center{
+    color: white;
+    
+}
+
+.right{
+    color: white;
+    margin-right: 1rem;
+}
+
+input[type="range"]{
+    filter: hue-rotate(210deg);
+    height: 7px;
+}
+
+progress{
+    width: 400px;
+    height: 5px;
+    filter: hue-rotate(210deg);
+    margin-top: 1.5rem;
+}
+.song-toolbar{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
 
