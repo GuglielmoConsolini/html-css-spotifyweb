@@ -15,6 +15,10 @@ body{
     opacity: 0.6;
 }
 
+h2{
+    color: white;
+}
+
 /* ***SPAZIATURE*** */
 .mrg-bottom{
     margin-bottom: 0.7rem;
@@ -23,40 +27,57 @@ body{
     padding-right: 0.5rem;
 }
 
+.mrg-top{
+    margin-top: 2.5rem;
+}
+
+.mrg-left{
+    margin-left: 1rem;
+}
+
 
 /***MAIN*** */
 
 .screen.container{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    
 }
 
 .main-container{
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 5rem);
     display: flex;
+}
+
+.content-container{
+    overflow: auto;
 }
 
 .song-container{
     width: 100%;
-    height: 10vh;
+    height: 5rem;
     background-color: #282828;
 }
 
 /****NAVBAR*** */
 
 .nav-container{
-    width: 15vw;
-    height: 90vh;
+    width: 10rem;
+    height: calc(100vh - 5rem);
     background-color: black;
     padding-left: 1rem;
     padding-top: 1rem;
 }
 
 .logo{
-    width: 60%;
+    width: 70%;
     margin-bottom: 1.5rem;
 }
+
+.playlist-col{
+    height: calc(100% - 5rem);
+}
+
 
 h3{
     color: white;
@@ -72,14 +93,69 @@ hr{
 }
 
 .user-box{
-    margin-top: 5rem;
+    height: 5rem;
 }
 
 /* ***UPGRADE BUTTON SECTION*** */
 
 .upgrade-row{
-    width: 85vw;
-    height: 15%;
+    width: 100%;
+    height: 10%;
     background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.upgrade{
+    background-color: #080b12;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 2rem;
+    padding: 0.7rem 1.4rem;
+}
+
+
+
+
+/* ***MAIN SONG SECTION*** */
+.song-box{
+    background-color: #141922;
+    height: 90%;
+    padding-top: 1rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.song-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card{
+    width: calc(100% / 6 - 2.5rem );
+}
+
+.song-card{
+    width: 100%;
+}
+
+.song-card img{
+    width: 100%;
+}
+
+.text-card{
+    text-align: center;
+    color: white;
+}
+
 
