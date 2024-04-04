@@ -45,6 +45,29 @@ h2{
     margin-right: 1rem;
 }
 
+/* ***HOVER*** */
+.upgrade:hover{
+    scale: 1.2;
+}
+
+.no-opacity:hover{
+    color: white;
+    opacity: 1;
+}
+
+
+.fa-regular.fa-circle-play:hover{
+    scale: 2;
+}
+
+.card:hover .start{
+    display: block;
+}
+
+.card:hover img{
+    opacity: 0.5;
+}
+
 /***MAIN*** */
 
 .screen.container{
@@ -154,7 +177,6 @@ hr{
 .nav{
     display: flex;
     justify-content: space-around;
-    color: white;
     font-size: 10px;
     width: 60%;
     margin: 0 auto;
@@ -171,6 +193,17 @@ hr{
 
 .song-card{
     width: 100%;
+    position: relative;
+}
+
+.start{
+    color: white;
+    scale: 2;
+    position: absolute;
+    right: 45%;
+    top: 50%;
+    transform: translate(-50% -50%);
+    display: none;
 }
 
 .song-card img{
